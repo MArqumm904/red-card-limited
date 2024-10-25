@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        
+ .admsg{
+    color: rgb(131, 248, 131);
+    font-weight:lighter ;
+ }
+    .addamessageheader{
+        height: 600px;
+        width: 100%;
+        background-color: rgb(216, 216, 216);
+    }
+    .addamessagetxt{
+        text-align: center;
+        font-style: oblique;
+    color: rgb(209, 35, 44);
+    font-weight: bold;
+    font-size: 50px;
+    }
+
+    .addamessagetxtt{
+        text-align: center;
+        font-style: normal;
+    font-weight: light;
+    font-size: 20px;
+    color: black;
+    }
+        .map{
+            width: 100%;
+            height: 650px;
+            background-color: rgb(54, 58, 66);
+            
+        
+        }
+        .mapptext{
+            color: white;
+            text-align: center;
+            font-size: large;
+            font-weight: lighter;
+        }
+        
+        .maptext{
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            font-weight: bolder;
+        }
+        
+        .bodyc{
+            background-color: rgb(54, 58, 66);
+            width: 100%;
+        }.rdcrd{
+            color: white;
+            font-size: 20px;
+            transition: all 0.7s ease-in-out;
+            margin-left: 90px;
+            margin-top: -45px;
+        font-weight: bolder;
+            
+        }
+        
+        .rdcrd:hover{
+            color: rgb(253, 57, 57);
+            font-size: 20.3px;
+            margin-left: 90px;
+            margin-top: -45px;
+            
+        }
+           
+        
+        .abt{
+            margin-left: 25px;
+            margin-top: 15px;
+            
+        }
+        
+            
+        
+        .home{
+            margin-left: 200px;
+            font-style: bold;
+            margin-top: 15px;    
+            
+            
+        }
+        
+        .link{
+            margin-left: 20px;
+            margin-top: 15px;
+           
+        
+        }
+        
+        .drpdwn{
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        
+        .logo{
+        height: 70px;
+        width: 75px;
+        
+        
+        }
+        
+        .section{
+            background-color: rgb(54, 58, 66);
+            height: 2510px;
+            width: 100%;
+        }
+        
+        .heading{
+            text-align: center;
+            font-style: italic;
+            font-size: 90px;
+            color: white;
+            padding-top: 90px;
+            font-weight: bolder;
+            transition: all 0.5s ease-in-out;
+        
+        }
+        
+        .sidemenu{
+            width: 100%;
+            height: 45px;
+        margin-top: 100px;
+        background-color: #26272b;
+        border-bottom: red;
+        border-top: red;
+        border-style: solid;
+        }
+        
+        
+        .heading:hover{
+            text-align: center;
+            font-style: italic;
+            font-size: 90px;
+            color: rgb(255, 20, 20);
+            padding-top: 90px;
+        }
+        
+        .sheading{
+            text-align: center  ;
+            color: white;
+            font-weight: lighter;
+        }
+        
+        .s1{
+            height: 500px;
+            width: 100px;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .s2{
+            height: 500px;
+            width: 100px;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .s3{
+            height: 500px;
+            width: 100px;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .catg{
+            color: white;
+            font-style: italic;
+            font-weight: normal;
+            text-align: center;
+            margin-right: 80px;
+        }
+        
+        
+        
+        
+        
+        .wedcards{
+          
+        margin-left: 60px;
+            float: left;
+            height: 200px;
+            width: 250px;
+            background-size: cover;
+            transition: 0.2s all ease-in-out;
+            border-width: 1px;  
+            border-radius: 5px;
+            border-color: red;
+            border-style: solid; 
+        }
+        
+        .wedcards:hover{
+        
+        
+            margin-left: 60px;
+            float: left;
+            height: 200px;
+            width: 250px;
+            border-width: 4px;  
+            border-radius: 5px;
+            background-size: cover;
+            border-color: red;
+            border-style: solid;
+         
+          
+        }
+        .anncards{
+          
+        
+            margin-left: 50px;
+            float: left;
+            height: 200px;
+            width: 250px;
+            background-size: cover;
+            transition: 0.2s all ease-in-out;
+            border-width: 1px;  
+            border-radius: 5px;
+            border-color: red;
+            border-style: solid; 
+        }
+        
+        .anncards:hover{
+            border-width: 4px;  
+        
+            margin-left: 50px;
+            float: left;
+            height: 200px;
+            width: 250px;
+            border-radius: 5px;
+            background-size: cover;
+            border-color: red;
+            border-style: solid;
+        
+        }
+        
+        
+        
+        
+        
+        .anntxt{
+            color: white;
+            font-weight: lighter;
+            text-align: center;
+        }
+        
+        
+        
+        .personalizedcards{
+            color: white    ;
+            font-style: italic;
+            font-weight: normal;
+            text-align: center;
+        }
+        
+        
+        .photomsg{
+            margin-left: 90px;
+            float: left;
+            height: 200px;
+            width: 250px;
+            background-size: cover;
+            transition: 0.2s all ease-in-out;
+            border-radius: 100%;
+            border-color: red;
+            border-style: solid; 
+            border-width: 1px;   
+            
+        }
+        
+        .photomsg:hover{
+            margin-left: 90px;
+            border-width: 4px;  
+            float: left;
+            height: 200px;
+            width: 250px;
+            background-size: cover;
+            border-radius: 5px;
+            border-color: red;
+            border-style: solid;
+        
+            
+        }
+        
+        .phototxt{
+            color: white;
+           text-align: center;
+           
+           
+        }
+        
+        
+        
+        .hrf{
+            background-color: rgb(54, 58, 66);
+        }
+        .hrf:hover{
+            text-decoration: none;
+        outline-offset: none; 
+        
+        }
+        
+        
+        .buy1{
+            background-color: rgb(58, 57, 57);
+            width: 275px;
+            height: 420px;
+         
+            margin-top: 200px;
+            border-color: rgb(0, 0, 0);
+            border-radius:10px 2px 10px 2px ;
+            border-style: groove;
+            
+        }
+        .buy2{
+            background-color: rgb(58, 57, 57);
+            width: 275px;
+            height: 420px;
+        
+            margin-top: 80px;
+            border-color: rgb(0, 0, 0);
+            border-radius:10px 2px 10px 2px ;
+            border-style: groove;
+            
+        }
+        
+        
+        .pic1{
+            width: 250px;
+            height: 275px;
+           border-radius: 20px;
+           margin-left: 12.5px;
+           margin-top: 10px;
+           transition: 0s ease-in-out;
+        }
+        .pic1:hover{
+            border-width: 3px;
+            border-color: red;
+            border-style: groove;
+        }
+        
+        .txt1{
+            background-color: white;
+            width: 250px;
+            margin-top: 10px;
+            transition: 0.3s ease-in-out;
+            color: black;
+            text-align: center;
+            border-radius:  1px;
+            margin-left: 12.5px;
+            height: 25px;font-weight: normal;
+        }
+        .txt1:hover{
+                background-color: rgb(255, 0, 0);
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                border-color: black;
+                border-style: groove;
+                border-width: 1px;
+            font-weight: normal;
+                
+        }
+        
+        .txt2{
+            color: black;
+            transition: 0.3s ease-in-out; 
+            
+        }
+        .txt2:hover{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        
+        .txt3{
+            margin-left: 15px;
+        }
+        .txt4{
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        
+        }
+        .txt4:hover{
+            text-decoration: underline;
+            color: wheat;
+        }
+        
+        .txt5{
+            margin-left: 15px;
+        }
+        .txt6{
+            color: rgb(255, 255, 255);
+            transition: 0.2s ease-in-out;
+        }
+        .txt6:hover{
+            color: rgb(253, 5, 5);
+            text-decoration: none;
+        }
+        
+        
+        
+        
+        
+        .insta{
+            height: 20px;
+            width: 25px;
+            
+        }
+        
+        .twi{
+            height: 20px;
+            width: 25px;
+            
+        }
+        
+        .fab{
+            height: 20px;
+            width: 25px;
+            
+        }
+        
+        .mail{
+            height: 20px;
+            width: 25px;
+        }
+        
+        .site-footer{
+            background-color: #26272b;
+            padding: 45px 0 20px;
+            font-size: 15px;
+            line-height: 24px;
+            color: #737373;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        
+        .site-footer hr{
+            border-top-color: #bbb;
+            opacity: 0.5;
+        
+        }
+        
+        .site-footer hr.small{
+        
+        margin: 20px 0;
+        
+        }
+        
+        .site-footer h6{
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-top: 5px;
+            letter-spacing: 2px;
+        }
+        
+        .site-footer a:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        
+        .footer-links{
+        padding-left: 0;
+        list-style: none;
+        
+        }
+        
+        .footer-links li{
+            display: block;
+        
+        }
+        
+        .footer-links a{
+            color: #737373;
+        }
+        
+        .footer-links a:active,
+        .footer-links a:focus,
+        .footer-links a:hover{
+            color: #fff;
+            text-decoration: none;
+        
+        }
+        
+        .footer-links.inline li{
+            display: inline-block;
+        }
+        
+        .site-footer .social-icons{
+            text-align: right;
+            
+        }
+        
+        .site-footer .social-icons a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 6px;
+            margin-right: 0;
+            border-radius: 100%;
+            background-color: #33353d;
+        }
+        
+        .copyright-text{
+            margin: 0;
+        }
+        
+        @media (max-width: 991px){
+            .site-footer [class^="col-"]{
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 767px){
+            .site-footer{
+                padding-bottom: 0;
+            }
+            .site-footer .copyright-text,
+            .site-footer .social-icons {
+                text-align: center;
+            }
+        }
+        
+        .social-icons{
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+        
+        
+        
+        .social-icons li{
+        display: inline-block;
+        margin-bottom: 4px;
+        
+        }
+        
+        .social-icons li.title{
+            margin-right: 15px;
+            text-transform: uppercase;
+            color: #96a2b2;
+        font-weight: 700;
+        font-size: 13px;
+        
+        }
+        
+        
+        .social-icons a{
+            background-color: #eceeef;
+            color: #818a91;
+            font-size: 16px;
+            display: inline-block;
+            line-height: 44px;
+            width: 44px;
+            height: 44px;
+            text-align: center;
+            margin-right: 8px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        
+        }
+        .social-icons a:active,
+        .social-icons a:focus,
+        .social-icons a:hover{
+            color: #fff;
+            background-color:rgb(247, 99, 99);
+        }
+        
+        
+        
+        .social-icons a.facebook:hover{
+            background-color: #3b5998;
+        }
+        
+        .social-icons a.twitter:hover{
+            background-color: #00aced;
+        }
+        
+        
+        .social-icons a.mail:hover{
+            background-color: white;
+        }
+        
+        
+        .social-icons a.instagram:hover{
+            background-color: #ea4c89;
+        }
+        
+        @media (max-width: 767px){
+            .social-icons li.title{
+                display: block;
+                margin-right: 0;
+                font-weight: 600;
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        @media(max-width:682px){
+            .sidemenu{
+              
+                width: 850px;
+        
+            
+            }
+        
+            #occ{
+                margin-left: -80px;
+            }
+        
+            #pez{
+                margin-left: -160px;
+        
+            }
+        }
+        
+        
+        @media(max-width:612px){
+            .sidemenu{
+                width: 600px;
+            }
+        
+            #occ{
+                margin-left: -20px;
+            }
+        
+            #pez{
+                margin-left: -50px;
+        
+            }
+        }
+        
+        @media(max-width:572px){
+            .sidemenu{
+                width: 550px;
+            }
+        
+            #occ{
+                margin-left: -69px;
+            }
+        
+            #pez{
+                margin-left: -90px;
+        
+            }
+        }
+        
+        
+            </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bodyc">
+    
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/index.html"><img class="logo" src="img/Pngtrered and black logo_5517319 (3).png" alt=""><b><h5 class="rdcrd"><b>RED CARDS LIMITED </b></h5></b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link home" href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/index.html" ><b title="HOME"> HOME  </b><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indexmap.html" style="color: red;"    ><b title="STORE">STORE</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indexabt.html"><b title="About us">About Us</b></a>
+              <div class="SUB-MENU">
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle drpdwn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SIGN IN 
+              </a>
+              <div class="dropdown-menu">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <label class="form-check-label" for="dropdownCheck">
+                      Remember me
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">New around here? Sign up</a>
+                <a class="dropdown-item" href="#">Forgot password?</a>
+              </div>
+            </li>
+       
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-color: red;">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-color: red; color: white; border-radius: 10px 10px 10px 10px; background-color: rgb(55, 58, 65);"> Search</button>
+          </form>
+       
+       </div>
+       
+      </nav>
+
+
+<div class="addamessageheader">
+ <img src="img/mcard.jpeg" alt="" style="height: 450px; width: 100%; ">
+ <h1 class="addamessagetxt">Add a Message Inside</h1>
+ <h4 class="addamessagetxtt">Personalize your Cards with a custom Message.</h4>
+
+
+
+</div>
+
+
+
+
+
+<div class="container" >
+    <div class="row">
+      <div class="col-sm">
+  
+  
+       <div class="buy1">
+        <a href="#"><img src="img/mcard1.png" class="pic1"></a>
+  
+        <div class="txt1">
+        <a href="#" class="txt2"> <b title="Click Here for add to cart.">  PERSONALIZE IT </b></a>
+      </div>
+  
+  <div  class="txt3">
+    <a href="#" class="txt4">$3.99</a>
+  </div>
+  
+  <div class="txt5">
+    <a href="#" class="txt6">Personalized lovely anniversary message card. </a>
+    <h6 class="admsg">Add a message-FREE</h6>
+  </div>
+  
+       </div>
+  
+  
+  
+      </div>
+      <div class="col-sm">
+  
+  
+  
+      
+        <div class="buy1">
+          <a href="#"><img src="img/mcard2.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart.">PERSONALIZE IT </b> </a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$6.94</a>
+    </div>
+    
+    <div class="txt5">
+      <a href="#" class="txt6">Personalized Star Wars Christmas card.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+  
+      </div>
+      <div class="col-sm">
+       
+  
+        <div class="buy1">
+          <a href="#"><img src="img/mcard3.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart.">  PERSONALIZE IT</b></a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$4.99</a>
+    </div>
+    
+    <div class="txt5">
+      <a href="#" class="txt6">You're not that old  personalized birthday card.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm">
+  
+  
+       <div class="buy2">
+        <a href="#"><img src="img/mcard4.png" class="pic1"></a>
+  
+        <div class="txt1">
+        <a href="#" class="txt2"> <b title="Click Here for add to cart.">PERSONALIZE IT </b></a>
+      </div>
+  
+  <div  class="txt3">
+    <a href="#" class="txt4">$2.49</a>
+  </div>
+  
+  <div class="txt5">
+    <a href="#" class="txt6">Personalized I had to leave the house Funny message card.</a>
+    <h6 class="admsg">Add a message-FREE</h6>
+  </div>
+  
+       </div>
+  
+  
+  
+      </div>
+      <div class="col-sm">
+  
+  
+  
+      
+        <div class="buy2">
+          <a href="#"><img src="img/mcard5.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart."> PERSONALIZE IT</b></a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$4.00</a>
+    </div>
+    
+    <div class="txt5">
+      <a href="#" class="txt6">Personalized Bear hug Encouragemenet card.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+  
+      </div>
+      <div class="col-sm">
+       
+  
+        <div class="buy2">
+          <a href="#"><img src="img/mcard6.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart."> PERSONALIZE IT </b> </a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$4.29</a>
+    </div>
+    
+    <div class="txt5">
+      <a href="#" class="txt6">So good together , personalized Anniversary card.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm">
+  
+  
+       <div class="buy2">
+        <a href="#"><img src="img/mcard7.png" class="pic1"></a>
+  
+        <div class="txt1">
+        <a href="#" class="txt2"> <b title="Click Here for add to cart.">  ADD TO CART </b></a>
+      </div>
+  
+  <div  class="txt3">
+    <a href="#" class="txt4">$2.99</a>
+  </div>
+  
+  <div class="txt5">
+    <a href="#" class="txt6">Extra love Encouragement message card.</a>
+    <h6 class="admsg">Add a message-FREE</h6>
+  </div>
+  
+       </div>
+  
+  
+  
+      </div>
+      <div class="col-sm">
+  
+  
+  
+      
+        <div class="buy2">
+          <a href="#"><img src="img/mcard8.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart.">  PERSONALIZE IT </b></a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$5.20</a>
+    </div>
+    
+    <div class="txt5">
+      <a href="#" class="txt6">Personalized Everyday is someone's  Birthday card.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+  
+      </div>
+      <div class="col-sm">
+       
+  
+        <div class="buy2">
+          <a href="#"><img src="img/mcard9.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart."> PERSONALIZE IT</b> </a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$5.99</a>
+    </div>
+    
+    <div class="txt5">
+      <a href="#" class="txt6">Personalized Holiday Encouragement card for hairstylist.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+  
+  
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="container " > 
+    <div class="row">
+      <div class="col-sm">
+  
+  
+       <div class="buy2">
+        <a href="#"><img src="img/mcard10.png" class="pic1"></a>
+  
+        <div class="txt1">
+        <a href="#" class="txt2"> <b title="Click Here for add to cart.">  PERSONALIZE IT </b> </a>
+      </div>
+  
+  <div  class="txt3">
+    <a href="#" class="txt4">$4.99</a>
+  </div>
+  
+  <div class="txt5">
+    <a href="#" class="txt6">Personalized Merry Christmas message card. </a>
+    <h6 class="admsg">Add a message-FREE</h6>
+  </div>
+  
+       </div>
+  
+  
+  
+      </div>
+      <div class="col-sm">
+  
+  
+  
+      
+        <div class="buy2">
+          <a href="#"><img src="img/mcard11.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart."> PERSONALIZE IT</b> </a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$4.69</a>
+    </div>
+    
+    <div class="txt5">
+      <a href="#" class="txt6">Love and Happiness Christmas card for friend.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+  
+      </div>
+      <div class="col-sm">
+       
+  
+        <div class="buy2">
+          <a href="#"><img src="img/mcard12.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart.">  PERSONALIZE IT </b> </a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$3.99</a>
+    </div>
+    
+  
+    <div class="txt5">
+      <a href="#" class="txt6">Personalized Christmas card for sisters.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm">
+  
+  
+       <div class="buy2">
+        <a href="#"><img src="img/mcard13.png" class="pic1"></a>
+  
+        <div class="txt1">
+        <a href="#" class="txt2"> <b title="Click Here for add to cart."> PERSONALIZE IT</b></a>
+      </div>
+  
+  <div  class="txt3">
+    <a href="#" class="txt4">$2.99</a>
+  </div>
+  
+  <div class="txt5">
+    <a href="#" class="txt6">What i wish for you Christmas card for Daughters.</a>
+    <h6 class="admsg">Add a message-FREE</h6>
+  </div>
+  
+       </div>
+  
+  
+  
+      </div>
+      <div class="col-sm">
+  
+  
+  
+      
+        <div class="buy2">
+          <a href="#"><img src="img/mcard14.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart."> PERSONALIZE IT </b> </a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$4.19</a>
+    </div>
+    
+    <div class="txt5">
+      <a href="#" class="txt6">Peace , Joy , Love and Blessing Christmas card.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+  
+      </div>
+      <div class="col-sm">
+       
+  
+        <div class="buy2">
+          <a href="#"><img src="img/mcard15.png" class="pic1"></a>
+    
+          <div class="txt1">
+          <a href="#" class="txt2"> <b title="Click Here for add to cart.">PERSONALIZE IT</b> </a>
+        </div>
+    
+    <div  class="txt3">
+      <a href="#" class="txt4">$4.50</a>
+    </div>
+    
+    <div class="txt5">
+      <a href="#" class="txt6">Loyalty and Love Christmas card for Husband.</a>
+      <h6 class="admsg">Add a message-FREE</h6>
+    </div>
+    
+         </div>
+  
+  
+  
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+
+
+
+      <br><br><br><br><br><br>
+     
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">
+          RED CARDS LTD is into selling cards for various occassions , like Birthday , Valentine , Eid , Anniversary.
+          red card is passionate in providing cards better than any websites available on the market. Features like , Video cards , boxed cards , greetings , text message and photo cards are also available.
+          So , what are you waiting for!!! Go order now and get a variety of your favourite cards available in affordable prices.
+        </p>
+      
+      </div>
+      <div class="col-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+<li><a href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indextprec.html">Top Recommends</a></li>
+<li><a href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/index.html#"> For Occasions</a></li>
+<li><a href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indexmc.html"> Personalized (Note Card)</a></li>
+<li><a href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indexvc.html">Personalized (Video Card)</a></li>
+<li><a href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indexpc.html">Personalized (Photo Card) </a></li>
+
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indexabt.html">About Us</a></li>
+          <li><a href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indexcategory.html">Contact Us</a></li>
+          <li><a href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indexpri.html">Privacy Policy</a></li>
+          <li><a href="file:///C:/Users/Aptech/Desktop/REDCARDLTD/indexmap.html">Shop</a></li>
+    
+        </ul>
+      </div>
+    </div>
+    <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyrigth &copy; 2022 All Rights Reserved byy <a href="#">RedCardsLtd</a>.</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <ul class="social-icons">
+            <li><a  class="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook" ><img class="fab" src="img/fb.png" alt=""></i></a></li>
+              <li><a  class="twitter" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter" ><img class="twi" src="img/twi.png" alt=""> </i></a></li>
+              <li><a  class="mail" href="https://mail.google.com/"><i class="fab fa-email" ><img class="mail" src="img/mail.png" alt=""></i></a></li>
+              <li><a  class="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram" ><img class="insta" src="img/insta.png" alt=""></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+      
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
